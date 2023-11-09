@@ -1,0 +1,19 @@
+---
+title: "Spatial Stroop Task?"
+author: "C Miller"
+date: "2023-11-14"
+categories: 
+image: "image.jpg"
+---
+
+## A Variation of the Classic Attention Interference Test
+
+## Executive Function and Spatial Memory
+
+#### Background
+
+##### The spatial Stroop effect: A comparison of color-word and position-word interference
+
+[Link to Article Spatial Stroop](https://link.springer.com/article/10.3758/s13423-014-0631-4)
+
+[PDF Download of Article](spatial_article.pdf)

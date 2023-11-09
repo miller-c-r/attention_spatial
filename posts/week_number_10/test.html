@@ -15,8 +15,6 @@
   
   <script>
 
-   
-    
     var jsPsych = initJsPsych({
       on_finish: function() {
         jsPsych.data.displayData('csv');
@@ -54,7 +52,13 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
         <p>In this task you will be presented with one of <b>four</b> words</p>
-        <p> These words indicate a text location: <b>LEFT</b><b>RIGHT</b><b>UP</b><b>DOWN</b> </p>
+        <p> You will also be presented with a directional word</p>
+        <p> Here is the list of words: <b>UP</b><b>DOWN</b><b>LEFT</b><b>RIGHT</b></p>
+        
+    
+        <p> Press <b>d</b> , <b>l </b>, <b>u</b>,<b>r</b> for the <b> word </b> on the screen</p>
+        <p>E.g., press <b> d</b> for <b> down </b> </p>
+        
         <p>Make your responses as quickly and as accurately as possible</p>
         <p>Press any key to begin.</p>
         `,
@@ -65,8 +69,7 @@
     
     var stroop_stimuli = [
       { stimulus:`
-        
-      <p>  
+        <p>  
       
       <style>
       .js-blue-button {
@@ -86,89 +89,49 @@
         `,
         word: "up
         position: "down",
-        congruency: "Congruent",
+        congruency: "Incongruent",
         correct_response: 'd'
       },
 
       { stimulus:`
-      <p>  
-      
-      <style>
-      .js-blue-button {
-        width:300px;
-        height: 300px;
-        border: none;
-        background-color: blue;
-        color: white;
-        position:absolute;
-        left: 0px;
-        
-      }
-      </style>
-      </p>
-      
-       <p <button onclick="colorBlue();"
-      class="js-blue-button">LEFT</button></p>
+        <p style='color:mediumvioletred; font-size:40pt;'>DUCK</p>
+        <img src='img/cat.jpg'></img>
         `,
-        word: "left",
-        position: "left",
-        congruency: "Congruent",
-        correct_response: 'l'
+        image: "cat",
+        word: "duck",
+        congruency: "Incongruent",
+        correct_response: 'd'
       },
 
       { stimulus:`
-      <p>  
-      
-      <style>
-      .js-blue-button {
-        width:300px;
-        height: 300px;
-        border: none;
-        background-color: blue;
-        color: white;
-        position:absolute;
-        right: 0px;
-        
-      }
-      </style>
-      </p>
-      
-       <p <button onclick="colorBlue();"
-      class="js-blue-button">RIGHT</button></p>
+        <p style='color:mediumvioletred; font-size:40pt;'>BOAT</p>
+        <img src='img/fish.jpg'></img>
         `,
-        word: "right",
-        position: "right",
-        congruency: "Congruent",
-        correct_response: 'r'
+        image: "fish",
+        word: "boat",
+        congruency: "Incongruent",
+        correct_response: 'b'
       },
-
       
       { stimulus:`
-      <p>  
-      
-      <style>
-      .js-blue-button {
-        width:300px;
-        height: 300px;
-        border: none;
-        background-color: blue;
-        color: white;
-        position:absolute;
-        left: 0px;
-        
-      }
-      </style>
-      </p>
-      
-       <p <button onclick="colorBlue();"
-      class="js-blue-button">UP</button></p>
+        <p style='color:mediumvioletred; font-size:40pt;'>CAT</p>
+        <img src='img/boat.jpg'></img>
         `,
-        word: "up",
-        position: "left",
-        congruency: "incongruent",
-        correct_response: 'l'
+        image: "boat",
+        word: "cat",
+        congruency: "Incongruent",
+        correct_response: 'c'
       },
-
+      
+      { stimulus:`
+        <p style='color:mediumvioletred; font-size:40pt;'>CAT</p>
+        <img src='img/duck.jpg'></img>
+        `,
+        image: "cat",
+        word: "cat",
+        congruency: "Congruent",
+        correct_response: 'c'
+      },
     ];
     
     
@@ -191,11 +154,11 @@
     var display_stroop_item = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: jsPsych.timelineVariable('stimulus'),
-      choices: ['r', 'l', 'u','d'],
+      choices: ['d', 'b', 'f','c'],
       data: {
         task: 'stroop',
         correct_response: jsPsych.timelineVariable('correct_response'),
-        position: jsPsych.timelineVariable('position'),
+        image: jsPsych.timelineVariable('image'),
         word: jsPsych.timelineVariable('word'),
         congruency: jsPsych.timelineVariable('congruency'),
       },
@@ -252,6 +215,6 @@
     timeline.push(debrief);
     jsPsych.run(timeline);
 
- 
+
   </script>
 </html>

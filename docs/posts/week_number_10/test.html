@@ -52,14 +52,12 @@
       type: jsPsychHtmlKeyboardResponse,
       stimulus: `
         <p>In this task you will be presented with one of <b>four</b> words</p>
-        <p> You will also be presented with an image</p>
-        <p> Here is the list of words: <b>boat, cat, duck, fish</b></p>
-        <p></p>
+        <p> You will also be presented with a directional word</p>
+        <p> Here is the list of words: <b>UP</b><b>DOWN</b><b>LEFT</b><b>RIGHT</b></p>
+        
     
-        <img src='img/duck.jpg'></img>
-        <img src='img/cat.jpg'></img>
-        <p> Press <b>d</b> , <b>b </b>, <b>f</b>,<b>c</b> for the <b> word </b> on the screen</p>
-        <p>E.g., press <b> d </b> for <b> duck </b> </p>
+        <p> Press <b>d</b> , <b>l </b>, <b>u</b>,<b>r</b> for the <b> word </b> on the screen</p>
+        <p>E.g., press <b> d</b> for <b> down </b> </p>
         
         <p>Make your responses as quickly and as accurately as possible</p>
         <p>Press any key to begin.</p>
@@ -71,26 +69,29 @@
     
     var stroop_stimuli = [
       { stimulus:`
-        <p style='color:mediumvioletred; font-size:40pt;'> DUCK</p>
-        <img src='img/duck.jpg'></img>
+        <p>  
+      
+      <style>
+      .js-blue-button {
+        width:300px;
+        height: 300px;
+        border: none;
+        background-color: blue;
+        color: white;
+        position:absolute;
+        down: 0px;
+        
+      }
+      </style>
+      </p>
+       <p <button onclick="colorBlue();"
+      class="js-blue-button">UP</button</p>
         `,
-        image: "duck",
-        word: "duck",
-        congruency: "Congruent",
+        word: "up
+        position: "down",
+        congruency: "Incongruent",
         correct_response: 'd'
       },
-
-
-      { stimulus:`
-        <p style='color:mediumvioletred; font-size:40pt;'>FISH</p>
-        <img src='img/fish.jpg'></img>
-        `,
-        image: "fish",
-        word: "fish",
-        congruency: "Congruent",
-        correct_response: 'f'
-      },
-
 
       { stimulus:`
         <p style='color:mediumvioletred; font-size:40pt;'>DUCK</p>

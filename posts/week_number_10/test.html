@@ -112,8 +112,8 @@
        <p <button onclick="colorBlue();"
       class="js-blue-button">RiGHT</button</p>
         `,
-        word: "RIGHT",
-        position: "RIGHT",
+        word: "right",
+        position: "right",
         congruency: "Congruent",
         correct_response: 'r'
       },
@@ -193,7 +193,7 @@
       data: {
         task: 'stroop',
         correct_response: jsPsych.timelineVariable('correct_response'),
-        image: jsPsych.timelineVariable('image'),
+        position: jsPsych.timelineVariable('position'),
         word: jsPsych.timelineVariable('word'),
         congruency: jsPsych.timelineVariable('congruency'),
       },

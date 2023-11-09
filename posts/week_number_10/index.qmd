@@ -2,6 +2,7 @@
 title: "Spatial Stroop Task?"
 author: "C Miller"
 date: "2023-11-14"
+image: " IMG_1783.JPG"
 ---
 
 ## A Variation of the Classic Attention Interference Test

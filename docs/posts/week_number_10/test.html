@@ -56,7 +56,7 @@
         <p> Here is the list of words: <b>UP</b> <b>DOWN</b> <b>LEFT</b> <b>RIGHT</b> </p>
         
     
-        <p> Press <b>d</b> , <b>l </b>, <b>u</b>,<b>r</b> for the <b> word </b> on the screen</p>
+        <p> Press <b>d</b> , <b>l </b>, <b>u</b>,<b>r</b> for the <b> LOCATION </b> on the screen</p>
         <p>E.g., press <b> d</b> for <b> down </b> </p>
         
         <p>Make your responses as quickly and as accurately as possible</p>
@@ -112,8 +112,8 @@
        <p <button onclick="colorBlue();"
       class="js-blue-button">RiGHT</button</p>
         `,
-        word: "RIGHT",
-        position: "RIGHT",
+        word: "right",
+        position: "right",
         congruency: "Congruent",
         correct_response: 'r'
       },
@@ -189,11 +189,11 @@
     var display_stroop_item = {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: jsPsych.timelineVariable('stimulus'),
-      choices: ['d', 'b', 'f','c'],
+      choices: ['d', 'l', 'r','u'],
       data: {
         task: 'stroop',
         correct_response: jsPsych.timelineVariable('correct_response'),
-        image: jsPsych.timelineVariable('image'),
+        position: jsPsych.timelineVariable('position'),
         word: jsPsych.timelineVariable('word'),
         congruency: jsPsych.timelineVariable('congruency'),
       },

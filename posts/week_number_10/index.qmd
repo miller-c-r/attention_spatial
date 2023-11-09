@@ -2,13 +2,11 @@
 title: "Spatial Stroop Task?"
 author: "C Miller"
 date: "2023-11-14"
-categories: 
-image: "image.jpg"
 ---
 
 ## A Variation of the Classic Attention Interference Test
 
-## Executive Function and Spatial Memory
+## Executive Function, Attention, Memory and Spatial Working? Memory
 
 #### Background
 
@@ -17,3 +15,8 @@ image: "image.jpg"
 [Link to Article Spatial Stroop](https://link.springer.com/article/10.3758/s13423-014-0631-4)
 
 [PDF Download of Article](spatial_article.pdf)
+
+
+## My Example of a Position-word Interference Task
+
+[Click to View the Experiment](test.html)

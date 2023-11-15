@@ -1,0 +1,16 @@
+{
+  "hash": "b05efc2b3d8a925159715db493fa7229",
+  "result": {
+    "markdown": "\n\n\n### Results of a Stroop Trial\n\n#### Two Levels Focus on Words, Ignore Words\n\n\n### Observations\n#### THere is a greater difference in the reaction time during congruent and incongruent trials on the ignore words condition. There was a smaller difference in reaction time during congruent and incongruent trials on the focus condition\n\n#### The congruent reaction time for focus condition was longer than the reaction time for ignore condition\n#### It seems I was not able to completely abandon paying more attention on the words during the condition that presented \"focus on words\" and my trials took a longer time.\n\n\n\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output .cell-output-stderr}\n```\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead.\n```\n:::\n\n::: {.cell-output-display}\n![](stroop2_files/figure-html/unnamed-chunk-2-1.png){fig-align='center' width=960}\n:::\n:::\n",
+    "supporting": [
+      "stroop2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

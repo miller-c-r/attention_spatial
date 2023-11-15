@@ -1,0 +1,69 @@
+---
+title: "Results of a Practice Stroop Trial"
+date: "2023-11-14"
+---
+
+### Results of a Stroop Trial
+
+#### Two Levels Focus on Words, Ignore Words
+
+##### Observations
+
+##### THere is a greater difference in the reaction time during congruent and incongruent trials on the ignore words condition. There was a smaller difference in reaction time during congruent and incongruent trials on the focus condition
+
+##### The congruent reaction time for focus condition was longer than the reaction time for ignore condition
+
+##### It seems I was not able to completely abandon paying more attention on the words during the condition that presented "focus on words" and my trials took a longer time.
+
+```{r, echo=FALSE, message=FALSE, include=FALSE}
+
+library(tidyverse)
+library(dplyr)
+library(ggthemes)
+library(readxl)
+library(reshape2)
+library(knitr)
+library(ggrepel)
+library(magrittr)
+
+
+foo_hw <- read_xlsx("hw_attention_trial.xlsx")
+
+glimpse(foo_hw)
+
+foo_hw$trial_type %<>% factor
+
+
+foo_hw
+
+
+
+
+
+
+
+```
+
+
+###### In the following graph stroop effect time is just displayed as a range and does not necessarily correspond to either line graph
+
+```{r  fig.align="center", echo = FALSE,fig.width = 10}
+
+
+
+
+ggplot(data=foo_hw)+
+  geom_line(mapping=aes(stroop_effect_time, incongruent,  color="incongruent"))+
+ geom_line(mapping=aes(stroop_effect_time , congruent, color="congruent"))+
+  scale_y_continuous(n.breaks=15)+
+  scale_x_continuous(n.breaks=15)+
+     theme(axis.text.x = element_text(angle=90 ,vjust=1, hjust=1))+
+            labs(
+            x="Range of Stroop Effect Time in milliseconds from Smallest to Largest ",
+            y="Congruent Versus Incongruent Trials in Milliseconds",
+            title="Differences in Stroop Effect for Congruent versus Incongruent Trials in Focus and Ignore Conditions")+
+  theme_light()+
+  theme( axis.line = element_line(colour = "lightgreen", 
+                      size = 1, linetype = "solid"))
+
+```

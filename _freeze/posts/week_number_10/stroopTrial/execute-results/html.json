@@ -1,0 +1,16 @@
+{
+  "hash": "66aba67dcdb72aee9d78275750c149c5",
+  "result": {
+    "markdown": "---\ntitle: \"Results of a Practice Stroop Trial\"\ndate: \"2023-11-14\"\n---\n\n\n### Results of a Stroop Trial\n\n#### Two Levels Focus on Words, Ignore Words\n\n##### Observations\n\n##### THere is a greater difference in the reaction time during congruent and incongruent trials on the ignore words condition. There was a smaller difference in reaction time during congruent and incongruent trials on the focus condition\n\n##### The congruent reaction time for focus condition was longer than the reaction time for ignore condition\n\n##### It seems I was not able to completely abandon paying more attention on the words during the condition that presented \"focus on words\" and my trials took a longer time.\n\n\n\n\n\n\n###### In the following graph stroop effect time is just displayed as a range and does not necessarily correspond to either line graph\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output .cell-output-stderr}\n```\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead.\n```\n:::\n\n::: {.cell-output-display}\n![](stroopTrial_files/figure-html/unnamed-chunk-2-1.png){fig-align='center' width=960}\n:::\n:::\n",
+    "supporting": [
+      "stroopTrial_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

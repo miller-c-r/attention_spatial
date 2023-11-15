@@ -26,5 +26,26 @@
     "title": "Spatial Stroop Task?",
     "section": "Executive Function, Attention, Memory and Spatial Working? Memory",
     "text": "Executive Function, Attention, Memory and Spatial Working? Memory\n\nBackground\n\nThe spatial Stroop effect: A comparison of color-word and position-word interference\nLink to Article Spatial Stroop\nPDF Download of Article"
+  },
+  {
+    "objectID": "posts/week_number_10/stroopTrial.html",
+    "href": "posts/week_number_10/stroopTrial.html",
+    "title": "Results of a Practice Stroop Trial",
+    "section": "",
+    "text": "Results of a Stroop Trial\n\nTwo Levels Focus on Words, Ignore Words\n\nObservations\n\n\nTHere is a greater difference in the reaction time during congruent and incongruent trials on the ignore words condition. There was a smaller difference in reaction time during congruent and incongruent trials on the focus condition\n\n\nThe congruent reaction time for focus condition was longer than the reaction time for ignore condition\n\n\nIt seems I was not able to completely abandon paying more attention on the words during the condition that presented “focus on words” and my trials took a longer time.\n\nIn the following graph stroop effect time is just displayed as a range and does not necessarily correspond to either line graph\n\n\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead."
+  },
+  {
+    "objectID": "posts/week_number_10/stroop2.html",
+    "href": "posts/week_number_10/stroop2.html",
+    "title": "A Spatial Cognitive Interference Test?",
+    "section": "",
+    "text": "Results of a Stroop Trial\n\nTwo Levels Focus on Words, Ignore Words\n\n\n\nObservations\n\nTHere is a greater difference in the reaction time during congruent and incongruent trials on the ignore words condition. There was a smaller difference in reaction time during congruent and incongruent trials on the focus condition\n\n\nThe congruent reaction time for focus condition was longer than the reaction time for ignore condition\n\n\nIt seems I was not able to completely abandon paying more attention on the words during the condition that presented “focus on words” and my trials took a longer time.\n\n\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead."
+  },
+  {
+    "objectID": "about.html#memory-and-attention-week-10",
+    "href": "about.html#memory-and-attention-week-10",
+    "title": "About",
+    "section": "Memory and Attention Week 10",
+    "text": "Memory and Attention Week 10"
   }
 ]
